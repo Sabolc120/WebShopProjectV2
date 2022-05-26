@@ -1,0 +1,107 @@
+.topnav {
+  overflow: hidden;
+  background-color: #EC480F;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #AD4833;
+  color: black;
+}
+.topnav a.active {
+  background-color: #EC0F0F;
+  color: white;
+}
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    text-align: center;
+}
+p{
+    font-style: oblique;
+    text-align: center;
+}
+.boxing{
+    border: 1px solid black;
+    padding:10px;
+}
+h4{
+    text-align:center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.ertek{
+    font-weight: 900;
+    padding-left:20px;
+    width:200px;
+}
+.col-lg-12{
+    background-color:#EC480F;
+    text-size: 30px;
+}
+.row{
+    padding-top:15px;
+}
+.button {
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  padding:15px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left:100px;
+}
+.paddingleft{
+    margin-left:25px;
+    margin-right:25px;
+}
+.foot{
+    background-color:#EC480F;
+    text-align:center;
+}
+.registerForm{
+    margin-left:100px;
+    text-size:24px;
+    margin-top:50px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

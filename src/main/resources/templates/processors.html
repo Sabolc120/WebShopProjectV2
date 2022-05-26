@@ -1,0 +1,99 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link th:href="@{/styles/style.css}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Processzorok</title>
+</head>
+<body>
+<div class="topnav">
+    <img th:src="@{/images/ikon.png}" style="width:50px" height="50px" align="left" class="paddingleft">
+    <a class="active" href="index">Főoldal</a>
+    <a href="topOffers">Top Offers</a>
+    <a href="processors">Processors</a>
+    <a href="gpus">Graphics cards</a>
+    <img th:src="@{/images/basket.png}" style="width:50px" height="50px" align="right" class="paddingleft">
+    <a href="register">Regisztráció</a>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="focim">Processzorok</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorOne.png}" style="width:100%">
+                <a href="#"><h4>Intel I5 Processzor</h4></a>
+                <p>Magok száma: 6, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 88.999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorSecond.png}" style="width:100%">
+                <a href="#"><h4>Intel I3 Processzor</h4></a>
+                <p>Magok száma: 4, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 48.999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorThird.png}" style="width:100%">
+                <a href="#"><h4>Intel I3 Processzor</h4></a>
+                <p>Magok száma: 4, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 48.9999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorFourth.png}" style="width:100%">
+                <a href="#"><h4>Intel I3 Processzor</h4></a>
+                <p>Magok száma: 6, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 48.999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorFifth.png}" style="width:100%">
+                <a href="#"><h4>Intel I7 Processzor</h4></a>
+                <p>Magok száma: 4, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 148.999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxing">
+                <img th:src="@{/images/processzorSixth.png}" style="width:100%">
+                <a href="#"><h4>Intel I7 Processzor</h4></a>
+                <p>Magok száma: 4, Órajel: 3.0Ghz, Foglalat:LGA</p>
+                <p style = "text-align:left" class="ertek"> 148.9999 Ft
+                    <button type="button" class="button">Kosárhoz adás!</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h1 class="foot">Sabolc Kft Pc webshop</h1>
+</footer>
+</body>
+</html>
