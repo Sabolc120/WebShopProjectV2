@@ -28,8 +28,8 @@ public class Controller {
     public String gpu(){
         return "gpus";
     }
-    @RequestMapping("/register")
-    public String reg(){
-        return "register";
+    @RequestMapping("/login")
+    public String log(){
+        return "login";
     }
 }

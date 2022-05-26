@@ -5,3 +5,17 @@
 -2.1 Adatbázis mentse le a beregisztrált adatokat
 -3. Termékek weboldala létrehozása(Részletesebb leírás, stb)
 Határidő: Nyári szünet vége
+
+Mi tartozik a regisztráláshoz:
+UserService Interface
+RegisterController Class
+thymleaf form actionök html
+register html
+User class
+
+Mi tartozik a loginhoz:
+UserService Interface
+LoginController Class
+UserDao Interface
+User class
+thymleaf login action
