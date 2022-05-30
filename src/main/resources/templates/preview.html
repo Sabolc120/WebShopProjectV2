@@ -7,7 +7,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link th:href="@{/styles/style.css}" rel="stylesheet" />
     <meta charset="UTF-8">
-    <title>Főoldal</title>
+    <title>Processzorok</title>
 </head>
 <body>
 <div class="topnav">
@@ -19,16 +19,8 @@
     <a href="register">Regisztráció</a>
     <a href="login">Belépés</a>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>Üdvözöllek a főoldalon, ez itt egy hobbi projekt</h1>
-            <p>A projekt Spring Boot-ot használ, JPA-t, és thymleafet + lokális MySql adatbázist. Ezen kívül tomcatet, az indításhoz.</p>
-        </div>
-    </div>
-</div>
-<footer>
-    <h1 class="foot">A weboldalon használt képek nincsenek a tulajdonomban, és a termék adatok kizárólag kitaláció.</h1>
-</footer>
+
+<h1>Adat lekérdezés az adatbázisból id alapján: </h1>
+<h1 th:text="${preview1}"></h1>
 </body>
 </html>

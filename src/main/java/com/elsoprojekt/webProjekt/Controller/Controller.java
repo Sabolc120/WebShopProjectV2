@@ -32,4 +32,8 @@ public class Controller {
     public String log(){
         return "login";
     }
+    @RequestMapping("/basket")
+    public String basket(){
+        return "basket";
+    }
 }

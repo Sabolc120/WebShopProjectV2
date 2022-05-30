@@ -16,7 +16,6 @@
     <a href="topOffers">Top Offers</a>
     <a href="processors">Processors</a>
     <a href="gpus">Graphics cards</a>
-    <img th:src="@{/images/basket.png}" style="width:50px" height="50px" align="right" class="paddingleft">
     <a href="register">Regisztráció</a>
     <a href="login">Belépés</a>
 </div>
@@ -31,30 +30,51 @@
         <div class="col-sm-4">
             <div class="boxing">
                 <img th:src="@{/images/wholePcOne.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 1</h4></a>
-                <p>Processzor: Intel, Videókártya: Rtx 2060</p>
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="1">
+                    <input type="submit" value="Gamer szamitógép 1">
+                </form>
+                <hr>
+                <p>Processzor: Intel, Videókártya: Rtx 2060, Memória: 32Gb</p>
                 <p style = "text-align:left" class="ertek"> 689.999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                    <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="1">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                    </form>
                 </p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="boxing">
                 <img th:src="@{/images/wholePcTwo.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 2</h4></a>
-                <p>Processzor: Ryzen, Memória: 32Gb</p>
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="2">
+                    <input type="submit" value="Gamer szamitógép 2">
+                </form>
+                <hr>
+                <p>Processzor: Ryzen, Videókártya: Gtx 1660, Memória: 32Gb</p>
                 <p style = "text-align:left" class="ertek"> 348.999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="2">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                </form>
                 </p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="boxing">
-                <img th:src="@{/images/wholePcThird.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 3</h4></a>
-                <p>Processzor: Ryzen, Videókártya: Gtx 1660</p>
+                <img th:src="@{/images/wholePcThree.jpg}" style="width:100%">
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="3">
+                    <input type="submit" value="Gamer szamitógép 3">
+                </form>
+                <hr>
+                <p>Processzor: Ryzen, Videókártya: Gtx 1660, Memória: 16Gb</p>
                 <p style = "text-align:left" class="ertek"> 300.999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="3">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                </form>
                 </p>
             </div>
         </div>
@@ -63,31 +83,52 @@
     <div class="row">
         <div class="col-sm-4">
             <div class="boxing">
-                <img th:src="@{/images/wholePcFourth.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 4</h4></a>
-                <p>Processzor: Intel, Videókártya: Rtx 3060</p>
+                <img th:src="@{/images/wholePcFour.jpg}" style="width:100%">
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="4">
+                    <input type="submit" value="Gamer szamitógép 4">
+                </form>
+                <hr>
+                <p>Processzor: Intel, Videókártya: Rtx 3060, Memória: 32Gb</p>
                 <p style = "text-align:left" class="ertek"> 789.999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="4">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                </form>
                 </p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="boxing">
-                <img th:src="@{/images/wholePcFifth.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 5</h4></a>
-                <p>Processzor: Intel, Memória: 64Gb</p>
+                <img th:src="@{/images/wholePcFive.jpg}" style="width:100%">
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="5">
+                    <input type="submit" value="Gamer szamitógép 5">
+                </form>
+                <hr>
+                <p>Processzor: Intel, Videókártya: Rtx 3080, Memória: 64Gb</p>
                 <p style = "text-align:left" class="ertek"> 980.999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="5">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                </form>
                 </p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="boxing">
-                <img th:src="@{/images/wholePcSixth.jpg}" style="width:100%">
-                <a href="#"><h4>Gamer számítógép 6</h4></a>
-                <p>Processzor: Ryzen, Videókártya: Rtx 3090</p>
-                <p style = "text-align:left" class="ertek"> 1.200.9999 Ft
-                    <button type="button" class="button">Kosárhoz adás!</button>
+                <img th:src="@{/images/wholePcSix.jpg}" style="width:100%">
+                <form action="/previewTopOffers" method="get">
+                    <input type="hidden" name="id" value="6">
+                    <input type="submit" value="Gamer szamitógép 6">
+                </form>
+                <hr>
+                <p>Processzor: Ryzen, Videókártya: Rtx 3090, Memória: 64Gb</p>
+                <p style = "text-align:left" class="ertek"> 1.200.999 Ft
+                <form action="/basket" method="get">
+                    <input type="hidden" name="id" value="6">
+                    <button type="submit" class="button">Kosárhoz adás!</button>
+                </form>
                 </p>
             </div>
         </div>

@@ -1,10 +1,10 @@
--Mire van még szükség?
--1. Kosár weboldala létrehozása
--1.1 A termék megjelenítése amit hozzáadtam a kosárhoz
--2. Login felület létrehozása, és regisztráció
--2.1 Adatbázis mentse le a beregisztrált adatokat
--3. Termékek weboldala létrehozása(Részletesebb leírás, stb)
-Határidő: Nyári szünet vége
+Mi kéne egy végső projektként még bele:
+
+-Belépett felhasználó tudjon kedvenceket hozzáadni egy fülbe
+-Kosár megoldása rendesesen
+-Termékre kattintáskor rendesen hozzon fel mindent dizájnnal együtt
+-Sikeres bejelentkezés alert Javascripttel, ugyanezz sikertelen esetben.
+
 
 Mi tartozik a regisztráláshoz:
 UserService Interface

@@ -16,7 +16,6 @@
   <a href="topOffers">Top Offers</a>
   <a href="processors">Processors</a>
   <a href="gpus">Graphics cards</a>
-  <img th:src="@{/images/basket.png}" style="width:50px" height="50px" align="right" class="paddingleft">
   <a href="register">Regisztráció</a>
   <a href="login">Belépés</a>
 </div>
@@ -31,30 +30,51 @@
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuOne.jpg}" style="width:100%">
-        <a href="#"><h4>EVGA Videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="1">
+          <input type="submit" value="EVGA Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 12Gb</p>
         <p style = "text-align:left" class="ertek"> 288.999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="13">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuTwo.jpg}" style="width:100%">
-        <a href="#"><h4>EVGA Videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="2">
+          <input type="submit" value="EVGA Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 6Gb</p>
         <p style = "text-align:left" class="ertek"> 148.999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="14">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuThree.jpg}" style="width:100%">
-        <a href="#"><h4>EVGA Videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="3">
+          <input type="submit" value="EVGA Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 8Gb</p>
-        <p style = "text-align:left" class="ertek"> 168.9999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <p style = "text-align:left" class="ertek"> 168.999 Ft
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="15">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
@@ -64,30 +84,51 @@
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuFour.jpg}" style="width:100%">
-        <a href="#"><h4>Nvidia videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="4">
+          <input type="submit" value="Nvidia Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 16Gb</p>
         <p style = "text-align:left" class="ertek"> 450.999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="16">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuFive.jpg}" style="width:100%">
-        <a href="#"><h4>Nvidia videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="5">
+          <input type="submit" value="Nvidia Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 11Gb</p>
         <p style = "text-align:left" class="ertek"> 348.999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="17">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="boxing">
         <img th:src="@{/images/gpuSix.jpg}" style="width:100%">
-        <a href="#"><h4>Nvidia videókártya</h4></a>
+        <form action="/preview" method="get">
+          <input type="hidden" name="id" value="6">
+          <input type="submit" value="Nvidia Videókártya">
+        </form>
+        <hr>
         <p>Videómemória: 1Gb</p>
         <p style = "text-align:left" class="ertek"> 21.999 Ft
-          <button type="button" class="button">Kosárhoz adás!</button>
+        <form action="/basket" method="get">
+          <input type="hidden" name="id" value="18">
+          <button type="submit" class="button">Kosárhoz adás!</button>
+        </form>
         </p>
       </div>
     </div>
