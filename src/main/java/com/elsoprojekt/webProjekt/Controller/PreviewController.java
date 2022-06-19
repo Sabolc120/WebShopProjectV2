@@ -15,15 +15,13 @@ public class PreviewController {
 
     @Autowired
     public PreviewRepo repo;
-    @Autowired
-    public PreviewCpuRepo cpurepo;
 
-    @GetMapping("/preview")
+    @GetMapping("/gpuPreview")
     public ModelAndView getPreview(@RequestParam Long id){
-        ModelAndView mv = new ModelAndView("preview.html");
-        Preview preview1 = repo.findById(id).orElse(new Preview());
-        mv.addObject("preview1",preview1);
-        System.out.println(preview1);
+        ModelAndView mv = new ModelAndView("gpuPreview.html");
+        Preview previewGpu = repo.findById(id).orElse(new Preview());
+        mv.addObject("previewGpu",previewGpu);
+        System.out.println(previewGpu);
         return mv;
     }
 }

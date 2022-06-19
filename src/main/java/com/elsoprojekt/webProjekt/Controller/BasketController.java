@@ -15,7 +15,7 @@ public class BasketController {
 
     @GetMapping("/basket")
     public ModelAndView getPreviewBasket(@RequestParam Long id){
-        ModelAndView mv = new ModelAndView("preview.html");
+        ModelAndView mv = new ModelAndView("cpuPreview.html");
         BasketModel preview1 = repo.findById(id).orElse(new BasketModel());
         mv.addObject("preview1",preview1);
         System.out.println(preview1);

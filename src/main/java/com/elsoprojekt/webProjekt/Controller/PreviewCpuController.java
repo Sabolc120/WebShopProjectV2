@@ -15,10 +15,10 @@ public class PreviewCpuController {
 
     @GetMapping("/previewCpu")
     public ModelAndView getPreviewCpu(@RequestParam Long id){
-        ModelAndView mv = new ModelAndView("preview.html");
-        PreviewCpu preview1 = repo.findById(id).orElse(new PreviewCpu());
-        mv.addObject("preview1",preview1);
-        System.out.println(preview1);
+        ModelAndView mv = new ModelAndView("cpuPreview.html");
+        PreviewCpu cpuPreview = repo.findById(id).orElse(new PreviewCpu());
+        mv.addObject("cpuPreview",cpuPreview);
+        System.out.println(cpuPreview);
         return mv;
     }
 

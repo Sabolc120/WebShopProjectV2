@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class PreviewTopOffersController {
+public class PreviewComputers {
     @Autowired
     public PreviewTopOffersRepo repo;
 
-    @GetMapping("/previewTopOffers")
-    public ModelAndView getPreviewTopOffers(@RequestParam Long id){
-        ModelAndView mv = new ModelAndView("preview.html");
-        PreviewTopOffers preview1 = repo.findById(id).orElse(new PreviewTopOffers());
-        mv.addObject("preview1",preview1);
-        System.out.println(preview1);
+    @GetMapping("/computersPreview")
+    public ModelAndView getComputers(@RequestParam Long id){
+        ModelAndView mv = new ModelAndView("computersPreview.html");
+        PreviewTopOffers computers = repo.findById(id).orElse(new PreviewTopOffers());
+        mv.addObject("computersPreview",computers);
+        System.out.println(computers);
         return mv;
     }
 

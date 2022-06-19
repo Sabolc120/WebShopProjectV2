@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2856e336ad.js" crossorigin="anonymous"></script>
     <link th:href="@{/styles/style.css}" rel="stylesheet" />
     <meta charset="UTF-8">
-    <title>Videókártyák</title>
+    <title>Processzorok</title>
 </head>
 <body>
 <section id="firstImpression">
@@ -47,24 +48,36 @@
         </nav>
     </div>
 </section>
-<div class="container">
+<h1 class="center">Termék információk </h1>
+<div class="container-fluid productPrev">
     <div class="row">
-        <div class="col-sm-12">
-            <h1>Regisztráció</h1>
+        <div class="col-lg-6">
+            <img class="productImage" th:src="${cpuPreview.url}">
+        </div>
+        <div class="col-lg-6">
+            <ul>
+                <li class="productDetail">Termék neve</li>
+                <li class="productProp" th:text="${cpuPreview.Title}"></li>
+                <li class="productDetail">Fizikai magok száma</li>
+                <li class="productProp" th:text="${cpuPreview.cores}"></li>
+                <li class="productDetail">Processzor foglalata</li>
+                <li class="productProp" th:text="${cpuPreview.socket}"></li>
+                <li class="productDetail">Processzor Órajele</li>
+                <li class="productProp" th:text="${cpuPreview.clock}"></li>
+                <li class="productDetail">Rövid leírás</li>
+                <li class="productDesc">Számítógép agya, ha akadásmentesen szeretne dolgozni vagy játszani, akkor
+                egy megfelelő processzor elengedhetetlen!</li>
+            </ul>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <div class="registerForm">
-                <form action="/register" method="post">
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username"><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    <input type="submit" class="btn btn-outline-primary btn-block" value="Regisztrálás">
-                </form>
-            </div>
+        <div class="col lg-6">
+            Ár: <h1 class="noline" th:text="${cpuPreview.price}"></h1>Ft
         </div>
+        <div class="col-lg-6 basketBtn">
+            <button type="button" class="btn btn-success btn-lg"><i class="fa-solid fa-basket-shopping"></i>Kosárba</button>
+        </div>
+    </div>
     </div>
 </div>
 </body>

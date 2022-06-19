@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Optional;
 
 @Entity
-@Table(name="previewTopOffers")
+@Table(name="previewComputers")
 public class PreviewTopOffers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
